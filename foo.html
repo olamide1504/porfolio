@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Home</title>
+	<!-- MDB icon -->
+	<link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<!-- Google Fonts Roboto -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Material Design Bootstrap -->
+	<link rel="stylesheet" href="css/mdb.min.css">
+	<!-- Your custom styles (optional) -->
+	<link rel="stylesheet" href="css/style.css">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+		body{
+		  padding: 40px;  
+		}
+
+		h6 {
+		  font-family: 'Source Code Pro', monospace;  
+		  font-size: 40px;
+		  font-weight: bold;
+		  width: 667px;
+		}
+	</style>
+</head>
+<body>
+
+	<h6 class="textIntro"></h6>
+
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script type="text/javascript">
+		var content = 'I am a UI/UX designer based in Lagos, Nigeria. She is passionate about designing and loves making complex issues look simple.';
+
+		var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+
+		$(ele).hide().appendTo('h6').each(function (i) {
+		    $(this).delay(100 * i).css({
+		        display: 'inline',
+		        opacity: 0
+		    }).animate({
+		        opacity: 1
+		    }, 100);
+		});
+	</script>
+</body>
+</html>
